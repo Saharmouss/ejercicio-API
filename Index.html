@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reproductor de vídeo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Reproductor de vídeo</h1>
+  <input type="file" id="videoFileInput" accept="video/mp4  onchange="handleFileSelect(this.files[0])">
+  <br><br>
+  <video id="videoPlayer" width="600" height="300" controls></video>
+  <br><br>
+  <div id="controls">
+    <button id="Play" disabled>Play</button>
+    <button id="Pause" disabled>Pause</button>
+    <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="1" disabled>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
